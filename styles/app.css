@@ -1,0 +1,449 @@
+*{
+	text-align: center;
+	margin: auto;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+body{
+
+background: #2ad357;  
+background: -moz-linear-gradient(45deg,  #2ad357 1%, #dd842a 49%, #d68e22 51%, #2ad357 100%);  
+background: -webkit-gradient(linear, left bottom, right top, color-stop(1%,#2ad357), color-stop(49%,#dd842a), color-stop(51%,#d68e22), color-stop(100%,#2ad357));  
+background: -webkit-linear-gradient(45deg,  #2ad357 1%,#dd842a 49%,#d68e22 51%,#2ad357 100%);  
+background: -o-linear-gradient(45deg,  #2ad357 1%,#dd842a 49%,#d68e22 51%,#2ad357 100%);  
+background: -ms-linear-gradient(45deg,  #2ad357 1%,#dd842a 49%,#d68e22 51%,#2ad357 100%);  
+background: linear-gradient(45deg,  #2ad357 1%,#dd842a 49%,#d68e22 51%,#2ad357 100%);  
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ad357', endColorstr='#2ad357',GradientType=1 );  
+
+/*
+background: #2ad357;
+background: -moz-linear-gradient(top,  #2ad357 0%, #dd842a 28%, #d68e22 42%, #2ad357 100%);  
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2ad357), color-stop(28%,#dd842a), color-stop(42%,#d68e22), color-stop(100%,#2ad357)); 
+background: -webkit-linear-gradient(top,  #2ad357 0%,#dd842a 28%,#d68e22 42%,#2ad357 100%);  
+background: -o-linear-gradient(top,  #2ad357 0%,#dd842a 28%,#d68e22 42%,#2ad357 100%);  
+background: -ms-linear-gradient(top,  #2ad357 0%,#dd842a 28%,#d68e22 42%,#2ad357 100%);  
+background: linear-gradient(to bottom,  #2ad357 0%,#dd842a 28%,#d68e22 42%,#2ad357 100%);  
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ad357', endColorstr='#2ad357',GradientType=0 );  
+
+*/
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	-webkit-font-smoothing: subpixel-antialiased;
+	width: 100%;
+	padding: 20px;
+	-webkit-animation: animateBody 1s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	-webkit-perspective: 1000;
+}
+
+@-webkit-keyframes animateBody{
+    0% { -webkit-transform: translateY(-1000px);  }
+    100% { -webkit-transform: translateY(0); }
+}
+
+/*--------FIRST PAGE BEGINS--------------------------------------------------------------------------------------------*/
+
+.title img{
+	opacity: 0.8;
+	-webkit-transform: scale(0.7);
+	-webkit-animation: titleImg 3s ease-in-out;
+	width: 100%;
+}
+
+@-webkit-keyframes titleImg{
+    0% { opacity: 0; -webkit-transform: scale(1.5); }
+    100% { opacity: 0.8; -webkit-transform: scale(0.7); }
+}
+
+.title img:hover{
+	opacity: 1;
+    -webkit-transition: 0.5s ease-in-out;
+	-webkit-transform: scale(0.9);
+}
+
+.title h4{
+    font-size: 2em;
+	color: #B6B6B4;
+	margin-top: 5px;
+	text-shadow: 0 0 15px Salmon ;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	-webkit-animation: 3s titleh4 ease-in-out;
+    -webkit-transition-style: preserve-3d;
+}
+
+
+@-webkit-keyframes titleh4{
+    0% { -webkit-transform: translateY(-1000px); }
+    60% { -webkit-transform: translateY(70px); }
+    70% { -webkit-transform: translateY(-70px) rotateX(720deg); }
+    100% { -webkit-transform: translateY(0) rotateX(0); }   
+}
+
+.title-button{
+	margin-top: 60px;
+	width: 350px;
+	height: 80px;
+	padding: 10px;
+    border: 5px solid #0B610B;
+    border-radius: 15px 40px 15px 40px;
+	box-shadow: 0 0 0 5px #dd842a;
+    color: #0B610B;
+    font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
+    font-size: 3em;
+    background: transparent;
+	display: inline;
+	-webkit-animation: titleBtn 3s ease-in-out;
+	-webkit-perspective: 1000;
+}
+
+@-webkit-keyframes titleBtn{
+    0% { -webkit-transform: rotateY(-90deg); }
+    50% { -webkit-transform: rotateY(-90deg); }
+    *60% { -webkit-transform: translateY(70px); }
+    80% { -webkit-transform: rotateY(60deg); }
+    100% { -webkit-transform: rotateY(0); }    
+}
+
+.title-button:hover{
+	-webkit-transform: scale(1.2);
+	background:#0B610B;
+	color: #dd842a;
+	border: 5px solid #dd842a;
+	box-shadow: 0 0 0 5px #0B610B;
+	width: 800px;
+	font-size: 3.5em;
+}
+
+.title-button .comment { display: none; }
+.title-button:hover .replies { display: none; }
+.title-button:hover .comment { display: inline; }
+
+
+.titleHr{
+   width: 50%;
+   border: 2px solid #0B610B;
+}
+
+.titleHr2{
+   width: 50%;
+   border: 2px solid #FF4500;
+}
+
+#producers{
+    font-size: 1.5em;
+	text-shadow: 0 0 15px Salmon ;
+	color: #B6B6B4;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	width: 100%;
+}
+
+.userType h4{
+	border: 3px solid #FF4500;
+	border-radius: 15px;
+	padding: 20px;
+	width: 40%;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	-webkit-animation: usersAnimate 4s ease-in-out;
+}
+
+@-webkit-keyframes usersAnimate{
+    0% { opacity: 0; }
+    *50% { color: green; }
+    *60% { -webkit-transform: translateY(70px); }
+    90% { opacity: 0; }
+    100% { opacity: 1; }      
+}
+
+.userType h4:hover{
+    -webkit-transform: scale(1.2);
+	border: 0;
+	box-shadow: 0 0 0 5px #FF4500;
+}
+
+.userType a{
+    color: #FF4500;
+	font-family: 'Lucida Bright', Georgia, serif;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 0 10px black;
+}
+
+.userType a:hover{
+	text-shadow: 0 0 10px gray;
+}
+
+.userType i{
+    font-size: 80px;
+	color: #FF4500;
+}
+
+/*--------FIRST PAGE ENDS--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*--------SECOND PAGE BEGINS----------------------------------------------------------------------------------------------------*/
+
+
+.inpBudget{
+    width: 80%;
+	padding: 25px;
+	background: transparent;
+	color: white;
+	font-family: Consolas, monaco, monospace;
+	font-size: 45px;
+	border: 0;
+	box-shadow: 0 0 0 3px black;
+	border-radius: 5px 50px 5px 50px;
+	text-shadow: 0 0 15px Salmon;
+	margin-top: 300px;
+}
+
+.raiseInpBar{
+    width: 80%;
+	padding: 25px;
+	background: transparent;
+	color: white;
+	font-family: Consolas, monaco, monospace;
+	font-size: 45px;
+	border: 0;
+	box-shadow: 0 0 0 3px black;
+	border-radius: 5px 50px 5px 50px;
+	text-shadow: 0 0 15px Salmon;
+	margin-top: 50px;
+}
+
+.showResults{
+    width: 100%;
+	display: block;
+	background: gray;
+	border-radius: 20px;
+	display: none;
+}
+
+::-webkit-input-placeholder { 
+    color: orange;
+	
+}
+:-moz-placeholder {  
+    color: orange;
+    font-family: 'Lucida Bright', Georgia, serif;
+}
+::-moz-placeholder { 
+    color: white;
+   	font-family: 'Lucida Bright', Georgia, serif;
+}
+:-ms-input-placeholder { 
+    color: white;
+   	font-family: 'Lucida Bright', Georgia, serif;
+}
+
+
+
+
+
+/*--------SECOND PAGE ENDS--------*/
+
+
+
+/*--------THIRD PAGE BEGINS--------*/
+
+
+
+.modifiedH4{
+    font-size: 2em;
+	color: #B6B6B4;
+	margin-top: 5px;
+	text-shadow: 0 0 15px salmon ;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+
+.moderatorName{
+    color: violet;
+	font-size: 2.5em;
+	-webkit-animation: moderatorNameAnimate 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes moderatorNameAnimate{
+    0% { -webkit-transform: scale(1); }
+    90% { -webkit-transform: scale(1.05); }
+    100% { -webkit-transform: scale(1); }
+}
+
+.modPageHr{
+    width: 50%; 
+	border: 1px solid #B6B6B4;
+}
+
+
+.item{
+    border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 15px;
+}
+
+.itemContent{
+    text-shadow: 0 0 15px salmon ;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	color: white;
+	font-size: 1.4em;
+}
+
+.itemsList, .selectedItemsList{
+    width: 95%;
+	overflow: auto;
+	height: 500px;
+} 
+
+.selectedItems{
+    height: 230px;
+	margin-bottom: 20px;
+    border: 2px solid black;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+#recipeDescription{
+    float: left;
+	width: 510px;
+	height: 200px;
+	background: black;
+	border: 0;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+.postBtn{
+    font-family: 'Monoton', cursive;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 5px solid black;
+	background: transparent;
+	margin-top: 90px;
+	font-size: 2em;
+	box-shadow: 0 0 10px 5px black;
+}
+
+.postBtn:hover{
+    -webkit-transform: scale(1.2);
+	background: black;
+	color: white;
+	box-shadow: 0 0 15px 10px white;
+}
+
+.recipes{
+    height: 450px;
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    border: 2px solid black;
+	border-radius: 5px;
+	overflow: auto;
+	padding: 20px;
+	color: white;
+}
+
+.recipeItems{
+	color: #B6B6B4;
+	margin-top: 5px;
+	text-shadow: 0 0 15px salmon ;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 2em;
+	display: block;	
+}
+
+.removeItem{
+	border-radius: 5px;
+	border: 2px solid black;
+	background: transparent;
+	font-size: 1.5em;
+	box-shadow: 0 0 5px 2px black;
+	line-height: 70px;
+	padding: 5px;
+	font-family: 'Lucida Bright', Georgia, serif;
+	color: black
+}
+
+.removeItem:hover{
+	background: black;
+	color: white;
+	box-shadow: 0 0 10px 5px white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+
+
+
+
+/*--------THIRD PAGE ENDS--------*/
+
+
+
+/*--------FIXING MOBILE DEVICES--------*/
+
+@media only screen and (max-width: 600px) {
+
+    .title-button{
+		width: 80%;
+		font-size: 2em;
+		height: 120px;
+    }
+
+    .title-button:hover{
+	    -webkit-transform: scale(1.1);
+	    width: 100%;
+	    font-size: 2.5em;
+    }
+	
+	.title h4{
+		font-size: 1.5em;
+    }
+	
+	.userType h4{
+	    border: 1px solid #FF4500;
+	    padding: 20px;
+	    width: 100%;
+    }
+	
+	.modifiedH4{
+        font-size: 2em;
+    }
+	
+	.itemsList{
+        width: 95%;
+	    overflow: auto;
+		height: 530px;	
+    } 
+	
+	.selectedItemsList{
+	    height: 760px;	
+	}
+	
+	.row h2{
+		margin-top: 15px;
+    }
+	
+	#recipeDescription{
+        float: none;
+	    width: 100%;
+	    height: 200px;
+    }
+	
+	.postBtn{
+		margin-top: 40px;
+		width: 150px;
+		height: 150px;
+	}
+
+}

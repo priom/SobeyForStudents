@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 1024M
+  instances: 1
+  domain: mybluemix.net
+  name: SobeysForStudents
+  host: sobeysforstudents
+  disk_quota: 1024M
+  services:
+  - Auto-Scaling-7s
+  - Monitoring and Analytics-8m
+  - ClearDB MySQL Database-m2
+  - SQL Database-33
