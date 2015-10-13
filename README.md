@@ -26,4 +26,3 @@ Eligibility The hackathon is open to all current university students and recent 
 Schedule: October 2 2015 Registration: 9:30am Tutorials: 10:00am - 12:30pm (Please bring your own computer) Lunch: 12:30pm - 1:30pm Tutorials: 1:30pm - 3:00pm
 
 October 9 2015 Team Pitches - Round One Judging: 10:00am - 12:00pm Lunch: 12:00pm - 12:45pm Finalists - Round Two Judging: 1:00-1:45 Awards: 2:00pm - 2:30pm
-# SobeyForStudents
